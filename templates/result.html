@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+      <form action="http://192.168.0.19:5000/show" method="get" target="_default">
+         <p>ALL VRFs:</p><button type="submit">Click me</button>   
+      </form> 
+   </body>
+   <meta http-equiv = "refresh" content = "2; url = http://192.168.0.19:5000/" />
+</html>
